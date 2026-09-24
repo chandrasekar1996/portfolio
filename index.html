@@ -2,568 +2,422 @@
 <html lang="en">
 
 <head>
-	<!-- Meta -->
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<!-- SITE TITLE -->
-	<title>Chandrasekar | Portfolio</title>
+	<title>Chandrasekar P — Front-End Developer</title>
+	<meta name="description" content="Chandrasekar P — Front-End Developer with 5+ years building responsive, scalable web and mobile apps with React.js, React Native and TypeScript.">
+	<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+	<link rel="icon" href="images/favicon.png" type="image/png" sizes="64x64">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<meta name="theme-color" content="#f3f0e8" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#0e0e0f" media="(prefers-color-scheme: dark)">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
-	<link href="fonts/font-awesome.min.css" rel="stylesheet" />
-	<link rel="icon" href="images/favicon.png" />
-	<link href="fonts/themify-icons.css" rel="stylesheet" />
-	<link href="fonts/etline.css" rel="stylesheet" />
-	<link href="css/plugins.css" rel="stylesheet" />
-	<link href="css/lightbox.min.css" rel="stylesheet" />
-	<link href="css/responsive.css" rel="stylesheet" />
-	<link href="css/style.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="css/site.css" rel="stylesheet">
+	<script>
+		// Apply saved theme before paint to avoid a flash
+		try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+	</script>
 </head>
 
-<body data-spy="scroll" data-offset="80">
-	<!-- START PRELOADER -->
-	<div class="preloader">
-		<div class="loader">
-			<div class="loader-outter"></div>
-			<div class="loader-inner"></div>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
 
-			<span>C</span>
+	<!-- NAV -->
+	<header class="nav-wrap">
+		<nav class="nav" aria-label="Main">
+			<a class="brand" href="#top" aria-label="Chandrasekar P — home">cs</a>
+			<ul class="nav-links" id="nav-links">
+				<li><a href="#services">Services</a></li>
+				<li><a href="#work">Work</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#education">Education</a></li>
+			</ul>
+			<div class="nav-actions">
+				<button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+					<svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+					<svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+				</button>
+				<a class="pill-btn" href="#contact">Let's talk</a>
+				<button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+					<span></span>
+				</button>
+			</div>
+		</nav>
+	</header>
+
+	<main id="main">
+		<!-- HERO / BENTO -->
+		<section class="hero" id="top">
+			<div class="bento">
+				<div class="tile tile-intro">
+					<p class="eyebrow"><span class="dot"></span>Front-End Developer · 5+ years</p>
+					<h1>I build <em>fast,</em> scalable interfaces for web <span class="amp">&amp;</span> mobile.</h1>
+					<p class="lead">Hi, I'm <strong>Chandrasekar P</strong> — a React.js &amp; React Native developer who cares about clean code, smooth performance and interfaces people enjoy using.</p>
+					<div class="cta-row">
+						<a class="btn btn-solid" href="#work">See my work <span aria-hidden="true">↘</span></a>
+						<a class="btn btn-line" href="#contact">Get in touch</a>
+					</div>
+				</div>
+
+				<div class="tile tile-badge" aria-hidden="true">
+					<svg class="badge-ring" viewBox="0 0 200 200">
+						<defs><path id="circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+						<text><textPath href="#circle">REACT.JS ✦ REACT NATIVE ✦ TYPESCRIPT ✦ OPEN TO WORK ✦ </textPath></text>
+					</svg>
+					<span class="badge-mono">CS</span>
+				</div>
+
+				<div class="tile tile-time">
+					<p class="tile-label">Local time</p>
+					<p class="clock" id="clock">--:--</p>
+					<p class="tile-foot">Namakkal, Tamil Nadu · IST</p>
+				</div>
+
+				<div class="tile tile-stat tile-years">
+					<p class="stat-num">5<sup>+</sup></p>
+					<p class="tile-label">Years building<br>for web &amp; mobile</p>
+				</div>
+
+				<div class="tile tile-stat tile-accent">
+					<p class="stat-num">50<sup>+</sup></p>
+					<p class="tile-label">Projects<br>delivered</p>
+				</div>
+
+				<div class="tile tile-stack">
+					<div>
+						<p class="tile-label">Daily stack</p>
+						<p class="stack-line">The React ecosystem, <em>end to end</em> — from component to app store.</p>
+					</div>
+					<div class="chip-rows" aria-label="React.js, React Native, TypeScript, Redux Toolkit, React Query, Nx, Jest, React Testing Library, Detox, SCSS, Git, Azure">
+						<div class="chip-scroll" aria-hidden="true">
+							<div class="chip-track">
+								<span>React.js</span><span>React Native</span><span>TypeScript</span><span>Redux Toolkit</span><span>React Query</span><span>Nx</span>
+								<span>React.js</span><span>React Native</span><span>TypeScript</span><span>Redux Toolkit</span><span>React Query</span><span>Nx</span>
+							</div>
+						</div>
+						<div class="chip-scroll" aria-hidden="true">
+							<div class="chip-track reverse">
+								<span>Jest</span><span>React Testing Library</span><span>Detox</span><span>SCSS</span><span>Git</span><span>Azure</span>
+								<span>Jest</span><span>React Testing Library</span><span>Detox</span><span>SCSS</span><span>Git</span><span>Azure</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tile tile-social">
+					<a href="https://www.linkedin.com/in/chandrasekar-p-6a3136a1/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+					<a href="https://www.instagram.com/c_ha_n_dr_u_92_43/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
+					<a href="mailto:chandrasekar1996@gmail.com">Email <span aria-hidden="true">↗</span></a>
+				</div>
+			</div>
+		</section>
+
+		<!-- MARQUEE -->
+		<div class="marquee" aria-hidden="true">
+			<div class="marquee-track">
+				<span>Responsive UI</span><i>✦</i><span>Cross-platform apps</span><i>✦</i><span>Performance</span><i>✦</i><span>Clean code</span><i>✦</i><span>Accessibility</span><i>✦</i>
+				<span>Responsive UI</span><i>✦</i><span>Cross-platform apps</span><i>✦</i><span>Performance</span><i>✦</i><span>Clean code</span><i>✦</i><span>Accessibility</span><i>✦</i>
+			</div>
 		</div>
-	</div>
-	<!-- END PRELOADER -->
 
-	<!-- START NAVBAR -->
-	<div class="navbar navbar-default navbar-fixed-top menu-top">
-		<div class="container">
-			<div class="logo">
-				<a href="index.html" class="navbar-brand">
-					<p>Chandru</p>
-				</a>
-				<div class="mobile-nav"></div>
+		<!-- SERVICES -->
+		<section class="section" id="services">
+			<div class="split">
+				<div class="split-head">
+					<p class="kicker">01 — Services</p>
+					<h2 class="h2">What I can <em>do</em> for you</h2>
+					<p class="muted">I specialise in front-end development — turning designs and requirements into scalable, high-performance web and mobile products.</p>
+				</div>
+				<ol class="service-list">
+					<li class="service reveal">
+						<span class="service-no">01</span>
+						<div>
+							<h3>React Web Development</h3>
+							<p>Responsive, scalable web apps with React.js, Redux and modern JavaScript — built for performance and maintainability.</p>
+						</div>
+					</li>
+					<li class="service reveal">
+						<span class="service-no">02</span>
+						<div>
+							<h3>React Native Apps</h3>
+							<p>Cross-platform mobile apps for Android and iOS, from development and testing through builds and deployment.</p>
+						</div>
+					</li>
+					<li class="service reveal">
+						<span class="service-no">03</span>
+						<div>
+							<h3>UI / UX Development</h3>
+							<p>Accessible, user-friendly interfaces with attention to performance, SEO and cross-browser compatibility.</p>
+						</div>
+					</li>
+					<li class="service reveal">
+						<span class="service-no">04</span>
+						<div>
+							<h3>State Management</h3>
+							<p>Robust data flows with Redux Toolkit, Context API and React Query for complex, data-driven apps.</p>
+						</div>
+					</li>
+					<li class="service reveal">
+						<span class="service-no">05</span>
+						<div>
+							<h3>Testing &amp; QA</h3>
+							<p>Unit and end-to-end testing with Jest, React Testing Library and Detox to ship reliable code.</p>
+						</div>
+					</li>
+					<li class="service reveal">
+						<span class="service-no">06</span>
+						<div>
+							<h3>Monorepo Architecture</h3>
+							<p>Nx monorepos that share code across web and mobile and keep large codebases easy to scale.</p>
+						</div>
+					</li>
+				</ol>
 			</div>
+		</section>
 
-			<div id="navbar" class="main_menu">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#service">Service</a></li>
-					<li><a href="#portfolio">Work</a></li>
-					<li><a href="#resume">Resume</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
+		<!-- WORK -->
+		<section class="section" id="work">
+			<div class="section-head">
+				<p class="kicker">02 — Selected work</p>
+				<h2 class="h2">Things I've <em>built</em></h2>
 			</div>
-		</div><!--- END CONTAINER -->
-	</div>
-	<!-- END NAVBAR -->
+			<div class="work-grid">
+				<article class="work-card work-wide reveal">
+					<div class="work-visual visual-phone" aria-hidden="true">
+						<div class="phone">
+							<div class="phone-bar"></div>
+							<svg class="fields" viewBox="0 0 120 120">
+								<path class="f1" d="M4 8 L58 4 L62 52 L6 58 Z"/>
+								<path class="f2" d="M64 4 L116 10 L112 46 L66 50 Z"/>
+								<path class="f3" d="M6 62 L60 56 L64 114 L10 116 Z"/>
+								<path class="f4" d="M66 54 L112 50 L116 112 L68 114 Z"/>
+							</svg>
+							<div class="phone-card"><i></i><i></i></div>
+							<div class="phone-card short"><i></i></div>
+						</div>
+						<div class="browser mini">
+							<div class="browser-bar"><i></i><i></i><i></i></div>
+							<div class="browser-body">
+								<div class="b-side"></div>
+								<div class="b-main"><i></i><i></i><i class="accent"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="work-body">
+						<p class="work-meta">SatSure Analytics · 2021 — Now</p>
+						<h3>Cross-platform field app</h3>
+						<p>Android and web interfaces built from a shared React Native / React.js codebase — RESTful API integration, dynamic data rendering, and managed Android builds and releases.</p>
+						<ul class="tags"><li>React Native</li><li>React.js</li><li>REST API</li><li>Android</li></ul>
+					</div>
+				</article>
 
-	<!-- START BANNER-SHOW -->
-	<section id="home" class="gray_bg main_banner">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<div class="banner_content">
-						<strong>Welcome!</strong>
-						<h1 class="cd-headline clip">
-							<span class="fw_600">I Am</span>
-							<span class="cd-words-wrapper">
-								<b class="is-visible fw_300">Chandrasekar</b>
-								<b class="fw_300">Frontend Developer</b>
-								<b class="fw_300">React Specialist</b>
-							</span>
-						</h1>
-						<p><strong>Location:</strong> Namakkal, Tamil Nadu | <strong>Phone:</strong> +91 9976956624<br><br>
-							Front-End Developer with 5+ years of experience building responsive, scalable, and high-performance web and mobile applications using React.js, React Native, JavaScript, and TypeScript. Specialized in cross-platform solutions, clean code, and optimized performance.
-						</p>
-						<ul class="banner_social_link">
-							<li><a href="https://www.linkedin.com/in/chandrasekar-p-6a3136a1/" target="_blank"><i
-										class="fa fa-linkedin"></i></a></li>
-							<li><a href="https://www.instagram.com/c_ha_n_dr_u_92_43/" target="_blank"><i
-										class="fa fa-instagram"></i></a></li>
-							<li><a href="mailto:chandrasekar1996@gmail.com"><i
-										class="fa fa-envelope"></i></a></li>
-							<li><a href="images/resume.pdf" download><i
-										class="fa fa-download"></i></a></li>
+				<article class="work-card reveal">
+					<div class="work-visual visual-graph" aria-hidden="true">
+						<svg viewBox="0 0 240 150">
+							<g class="edges">
+								<path d="M120 75 L50 32"/><path d="M120 75 L190 32"/><path d="M120 75 L50 118"/><path d="M120 75 L190 118"/>
+							</g>
+							<g class="node"><rect x="22" y="18" width="56" height="28" rx="14"/><text x="50" y="36">web</text></g>
+							<g class="node"><rect x="162" y="18" width="56" height="28" rx="14"/><text x="190" y="36">mobile</text></g>
+							<g class="node"><rect x="22" y="104" width="56" height="28" rx="14"/><text x="50" y="122">ui-lib</text></g>
+							<g class="node"><rect x="162" y="104" width="56" height="28" rx="14"/><text x="190" y="122">utils</text></g>
+							<g class="node core"><circle cx="120" cy="75" r="22"/><text x="120" y="80">nx</text></g>
+						</svg>
+					</div>
+					<div class="work-body">
+						<p class="work-meta">SatSure Analytics · Architecture</p>
+						<h3>Nx monorepo platform</h3>
+						<p>Shared code across web and mobile apps, with Redux Toolkit + React Query state and Jest / RTL / Detox test coverage.</p>
+						<ul class="tags"><li>Nx</li><li>TypeScript</li><li>Redux Toolkit</li><li>Detox</li></ul>
+					</div>
+				</article>
+
+				<article class="work-card reveal">
+					<div class="work-visual visual-browser" aria-hidden="true">
+						<div class="browser">
+							<div class="browser-bar"><i></i><i></i><i></i></div>
+							<div class="browser-body stack">
+								<div class="b-hero"><i></i><i class="accent"></i></div>
+								<div class="b-row"><span></span><span></span><span></span></div>
+							</div>
+						</div>
+					</div>
+					<div class="work-body">
+						<p class="work-meta">Sketch Brahma · 2019 — 2021</p>
+						<h3>Client web applications</h3>
+						<p>Static and dynamic web apps for clients — reusable, accessible components with SEO, cross-browser support and React Router navigation.</p>
+						<ul class="tags"><li>React.js</li><li>Redux</li><li>SCSS</li><li>React Router</li></ul>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<!-- EXPERIENCE -->
+		<section class="section" id="experience">
+			<div class="section-head">
+				<p class="kicker">03 — Experience</p>
+				<h2 class="h2">Where I've <em>worked</em></h2>
+			</div>
+			<div class="accordion">
+				<details class="job reveal" open>
+					<summary>
+						<span class="job-when">Mar 2021 — Present</span>
+						<span class="job-role">Software Development Engineer 2</span>
+						<span class="job-org">SatSure Analytics India Pvt. Ltd</span>
+						<span class="job-toggle" aria-hidden="true"></span>
+					</summary>
+					<div class="job-body">
+						<ul>
+							<li>Developed and maintained responsive, cross-platform interfaces for Android and web using React Native and React.js.</li>
+							<li>Integrated RESTful APIs and implemented dynamic data rendering for high-performance mobile and web apps.</li>
+							<li>Improved performance through lazy loading, code splitting and memoization.</li>
+							<li>Lead development within an Nx monorepo to enable shared code and improve scalability.</li>
+							<li>Implemented state management with Redux Toolkit, Context API and React Query.</li>
+							<li>Conducted unit and E2E testing with Jest, React Testing Library and Detox.</li>
+							<li>Managed Android deployments and builds; provided iOS troubleshooting support.</li>
 						</ul>
+						<ul class="tags"><li>React Native</li><li>React.js</li><li>TypeScript</li><li>Redux Toolkit</li><li>React Query</li><li>Nx</li><li>Jest</li><li>Detox</li></ul>
 					</div>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<div class="banner-images">
-						<img src="images/p5.png" alt="Chandrasekar - Web Developer & Designer" loading="lazy" />
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END BANNER-SHOW -->
-
-
-	<!-- START SERVICE -->
-	<section id="service" class="gray_bg section_padding">
-		<div class="container">
-			<div class="col-md-12 col-sm-12 col-xs-12">
-				<div class="section_heading text-center">
-					<h2>My <span>Services</span></h2>
-					<p>Specializing in front-end development with expertise in React.js, React Native, and building scalable,<br>high-performance web and mobile applications with modern JavaScript frameworks.
-					</p>
-					<div class="sm_border"></div>
-				</div>
-			</div>
-
-			<div class="row text-center">
-				<div class="col-md-4 col-sm-6 col-xs-12">
-					<div class="single-service">
-						<i class="fa fa-github"></i>
-						<h4>React Web Development</h4>
-						<p>Building responsive, scalable web applications using React.js, Redux, and modern JavaScript. Focused on performance optimization, clean code, and maintainability.</p>
-					</div>
-				</div> <!-- End Col -->
-				<div class="col-md-4 col-sm-6 col-xs-12">
-					<div class="single-service">
-						<i class="fa fa-mobile"></i>
-						<h4>React Native Apps</h4>
-						<p>Developing cross-platform mobile applications for iOS and Android using React Native, with expertise in testing, debugging, and deployment.</p>
-					</div>
-				</div> <!-- End Col -->
-				<div class="col-md-4 col-sm-6 col-xs-12">
-					<div class="single-service">
-						<i class="fa fa-code"></i>
-						<h4>UI/UX Development</h4>
-						<p>Creating responsive, accessible, and user-friendly interfaces with a focus on performance optimization, SEO, and cross-browser compatibility.</p>
-					</div>
-				</div> <!-- End Col -->
-				<div class="col-md-4 col-sm-6 col-xs-12">
-					<div class="single-service">
-						<i class="fa fa-cogs"></i>
-						<h4>State Management</h4>
-						<p>Implementing robust state management solutions using Redux Toolkit, Context API, and React Query for complex, data-driven applications.</p>
-					</div>
-				</div> <!-- End Col -->
-				<div class="col-md-4 col-sm-6 col-xs-12">
-					<div class="single-service">
-						<i class="fa fa-flask"></i>
-						<h4>Testing & QA</h4>
-						<p>Comprehensive unit and E2E testing using Jest, React Testing Library, and Detox to ensure high-quality, reliable code.</p>
-					</div>
-				</div> <!-- End Col -->
-				<div class="col-md-4 col-sm-6 col-xs-12">
-					<div class="single-service">
-						<i class="fa fa-cube"></i>
-						<h4>Monorepo Architecture</h4>
-						<p>Designing and implementing scalable Monorepo architectures using Nx to enable code sharing across platforms and improve maintainability.</p>
-					</div>
-				</div> <!-- End Col -->
-			</div>
-		</div>
-	</section>
-	<!-- END SERVICE -->
-
-	<!-- START CTA -->
-	<section class="cta_section section_padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<div class="cta_content">
-						<h3>Available for Freelance Projects!</h3>
-						<a href="#contact" class="btn btn-default main_btn"><span>Hire Me</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END CTA -->
-
-	<!-- START PORTFOLIO -->
-	<section id="portfolio" class="gray_bg section_padding">
-		<div class="container">
-			<div class="col-md-12 col-sm-12 col-xs-12">
-				<div class="section_heading text-center">
-					<h2>My <span>Work</span></h2>
-					<p>A fusion of creativity and technical expertise, <br>crafting captivating digital experiences.</p>
-					<div class="sm_border"></div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="work_filter text-center">
-					<ul>
-						<li class="active" data-filter="*">All</li>
-						<li data-filter=".design">Design</li>
-						<li data-filter=".marketing">Marketing</li>
-						<li data-filter=".photography">Photography</li>
-					</ul>
-				</div>
-
-				<div class="work_content_area">
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item photography">
-						<div class="item-img">
-							<img src="images/ph3.jpg" alt="Landscape Photography" height="552" width="895" loading="lazy" />
-							<div class="item-img-overlay">
-								<div class="overlay-info full-width">
-									<p>Photography</p>
-									<h5>Landscape Shot</h5>
-									<a href="images/ph3.jpg" data-lightbox="images">
-										<span class="icon"><i class="ti-arrow-right"></i></span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item design Photography">
-						<div class="item-img">
-							<img src="images/bl4.png" alt="UI Design Project" height="552" width="895" loading="lazy" />
-							<div class="item-img-overlay">
-								<div class="overlay-info full-width">
-									<p>Design</p>
-									<h5>UI / UX Design</h5>
-									<a href="images/bl4.png" data-lightbox="images">
-										<span class="icon"><i class="ti-arrow-right"></i></span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item marketing photography">
-						<div class="item-img">
-							<img src="images/ph7.png" alt="Marketing Campaign" height="552" width="895" loading="lazy" />
-							<div class="item-img-overlay">
-								<div class="overlay-info full-width">
-									<p>Marketing</p>
-									<h5>Brand Campaign</h5>
-									<a href="images/ph7.png" data-lightbox="images">
-										<span class="icon"><i class="ti-arrow-right"></i></span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item design Photography">
-						<div class="item-img">
-							<img src="images/ph9.jpg" alt="Portrait Photography" height="552" width="895" loading="lazy" />
-							<div class="item-img-overlay">
-								<div class="overlay-info full-width">
-									<p>Photography</p>
-									<h5>Portrait Series</h5>
-									<a href="images/ph9.jpg" data-lightbox="images">
-										<span class="icon"><i class="ti-arrow-right"></i></span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item marketing Photography">
-						<div class="item-img">
-							<img src="images/ph11.jpg" alt="Social Media Design" height="552" width="895" loading="lazy" />
-							<div class="item-img-overlay">
-								<div class="overlay-info full-width">
-									<p>Marketing</p>
-									<h5>Social Media Design</h5>
-									<a href="images/ph11.jpg" data-lightbox="images">
-										<span class="icon"><i class="ti-arrow-right"></i></span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 element-item design marketing">
-						<div class="item-img">
-							<img src="images/ph12.jpg" alt="Web Design Mockup" loading="lazy" />
-							<div class="item-img-overlay">
-								<div class="overlay-info full-width">
-									<p>Design</p>
-									<h5>Web Design Mockup</h5>
-									<a href="images/ph12.jpg" data-lightbox="images">
-										<span class="icon"><i class="ti-arrow-right"></i></span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END PORTFOLIO -->
-
-	<!-- START COUNTER -->
-	<section id="counter_area" class="section_padding">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="single_counter">
-						<h3><span class="counter">50</span>+</h3>
-						<h5>Successful Projects</h5>
-					</div>
-
-				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="single_counter">
-						<h3><span class="counter">30</span>+</h3>
-						<h5>Happy Clients</h5>
-					</div>
-				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="single_counter">
-						<h3><span class="counter">5</span>+</h3>
-						<h5>Years of Experience</h5>
-					</div>
-				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="single_counter border_left">
-						<h3><span class="counter">10</span>+</h3>
-						<h5>Technologies Used</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END COUNTER -->
-
-	<!-- START RESUME -->
-	<section id="resume" class="gray_bg section_padding">
-		<div class="container">
-			<!-- SKILLS SECTION -->
-			<div class="row" style="margin-bottom: 60px;">
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div class="section_heading text-center" style="margin-bottom: 40px;">
-						<h3>Technical <span>Skills</span></h3>
-						<div class="sm_border"></div>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<div class="education-container wow fadeInUp">
-						<h5 style="margin-bottom: 20px; font-weight: 600;">Languages & Frameworks</h5>
-						<ul class="skill-list" style="list-style: none; padding: 0;">
-							<li style="padding: 8px 0;"><strong>Languages:</strong> JavaScript, TypeScript, HTML5, CSS3, SCSS, SQL</li>
-							<li style="padding: 8px 0;"><strong>Frameworks:</strong> React.js, React Native, Redux Toolkit, React Query, Context API, React Router</li>
-							<li style="padding: 8px 0;"><strong>Architecture:</strong> Nx (Monorepo), RESTful APIs, Monorepo Architecture</li>
-							<li style="padding: 8px 0;"><strong>Testing:</strong> Jest, React Testing Library, Detox (E2E), Unit & E2E Testing</li>
+				</details>
+				<details class="job reveal">
+					<summary>
+						<span class="job-when">Dec 2019 — Feb 2021</span>
+						<span class="job-role">UI Development (Intern)</span>
+						<span class="job-org">Sketch Brahma Private Technology Ltd</span>
+						<span class="job-toggle" aria-hidden="true"></span>
+					</summary>
+					<div class="job-body">
+						<ul>
+							<li>Collaborated with cross-functional teams to deliver high-performance web and mobile applications.</li>
+							<li>Built reusable, responsive UI components optimised for SEO, accessibility and cross-browser compatibility.</li>
+							<li>Delivered static and dynamic web applications tailored to client requirements.</li>
+							<li>Developed interactive, data-driven apps with conditional rendering and React Router navigation.</li>
+							<li>Took part in Agile ceremonies and used Git for version control and collaboration.</li>
 						</ul>
+						<ul class="tags"><li>React.js</li><li>React Native</li><li>TypeScript</li><li>Redux</li><li>SCSS</li><li>React Router</li></ul>
 					</div>
-				</div>
+				</details>
+			</div>
+		</section>
 
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<div class="education-container wow fadeInUp">
-						<h5 style="margin-bottom: 20px; font-weight: 600;">Tools & Practices</h5>
-						<ul class="skill-list" style="list-style: none; padding: 0;">
-							<li style="padding: 8px 0;"><strong>Version Control:</strong> Git, GitHub, Bitbucket</li>
-							<li style="padding: 8px 0;"><strong>DevOps & Tools:</strong> CI/CD, Azure, ClickUp, Jira</li>
-							<li style="padding: 8px 0;"><strong>Methodologies:</strong> Agile, Scrum, Performance Optimization, Accessibility, SEO</li>
-							<li style="padding: 8px 0;"><strong>Mobile:</strong> Android/iOS Testing, Cross-browser Compatibility, Responsive Design</li>
-						</ul>
-					</div>
+		<!-- SKILLS -->
+		<section class="section" id="skills">
+			<div class="section-head">
+				<p class="kicker">04 — Skills</p>
+				<h2 class="h2">My <em>toolkit</em></h2>
+			</div>
+			<div class="skill-groups">
+				<div class="skill-group reveal">
+					<h3>Languages</h3>
+					<ul class="chips"><li>JavaScript</li><li>TypeScript</li><li>HTML5</li><li>CSS3</li><li>SCSS</li><li>SQL</li></ul>
+				</div>
+				<div class="skill-group reveal">
+					<h3>Frameworks &amp; state</h3>
+					<ul class="chips"><li>React.js</li><li>React Native</li><li>Redux Toolkit</li><li>React Query</li><li>Context API</li><li>React Router</li></ul>
+				</div>
+				<div class="skill-group reveal">
+					<h3>Testing</h3>
+					<ul class="chips"><li>Jest</li><li>React Testing Library</li><li>Detox (E2E)</li></ul>
+				</div>
+				<div class="skill-group reveal">
+					<h3>Architecture &amp; tools</h3>
+					<ul class="chips"><li>Nx Monorepo</li><li>REST APIs</li><li>Git</li><li>GitHub</li><li>Bitbucket</li><li>CI/CD</li><li>Azure</li><li>Jira</li><li>ClickUp</li></ul>
+				</div>
+				<div class="skill-group reveal">
+					<h3>Practices</h3>
+					<ul class="chips"><li>Agile / Scrum</li><li>Performance</li><li>Accessibility</li><li>SEO</li><li>Responsive design</li><li>Cross-browser</li></ul>
 				</div>
 			</div>
+		</section>
 
-			<!-- WORK EXPERIENCE -->
-			<div class="row" style="margin-bottom: 60px;">
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div class="section_heading text-center" style="margin-bottom: 40px;">
-						<h3>Work <span>Experience</span></h3>
-						<div class="sm_border"></div>
-					</div>
-				</div>
-
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div class="education-container wow fadeInUp">
-						<ul class="edu-list experience">
-							<li>
-								<strong>Mar 2021 - Present</strong>
-								<h5>Software Development Engineer - 2 | SatSure Analytics India Pvt Ltd</h5>
-								<p><strong>Tech Stack:</strong> React Native, React.js, Redux Toolkit, React Query, Context API, Nx (Monorepo), TypeScript, Jest, React Testing Library, Detox</p>
-								<ul style="margin-top: 10px; margin-left: 20px;">
-									<li>Developed and maintained responsive, cross-platform interfaces for Android and web platforms using React Native and React.js</li>
-									<li>Integrated RESTful APIs and implemented dynamic data rendering for high-performance mobile and web applications</li>
-									<li>Improved performance through lazy loading, code splitting, and memoization techniques</li>
-									<li>Lead development within a Monorepo architecture using Nx to enable shared code and improve scalability</li>
-									<li>Implemented state management using Redux Toolkit, Context API, and React Query</li>
-									<li>Conducted unit and E2E testing with Jest, React Testing Library, and Detox</li>
-									<li>Managed Android app deployments and builds; provided iOS troubleshooting support</li>
-								</ul>
-							</li>
-							<li style="margin-top: 30px;">
-								<strong>Dec 2019 - Feb 2021</strong>
-								<h5>UI Development (Intern) | Sketch Brahma Private Technology Limited</h5>
-								<p><strong>Tech Stack:</strong> React.js, React Native, TypeScript, Redux, HTML5, CSS3/SCSS, JavaScript, Git, REST APIs, React Router</p>
-								<ul style="margin-top: 10px; margin-left: 20px;">
-									<li>Collaborated with cross-functional teams to deliver high-performance web and mobile applications</li>
-									<li>Built reusable, responsive UI components optimized for SEO, accessibility, and cross-browser compatibility</li>
-									<li>Delivered static and dynamic web applications tailored to client requirements</li>
-									<li>Developed interactive, data-driven apps with conditional rendering and seamless navigation using React Router</li>
-									<li>Participated in Agile ceremonies and used Git for version control and collaboration</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
+		<!-- EDUCATION -->
+		<section class="section" id="education">
+			<div class="section-head">
+				<p class="kicker">05 — Education</p>
+				<h2 class="h2">Learning &amp; <em>certifications</em></h2>
 			</div>
-
-			<!-- EDUCATION -->
-			<div class="row" style="margin-bottom: 60px;">
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div class="section_heading text-center" style="margin-bottom: 40px;">
-						<h3>Education & <span>Certifications</span></h3>
-						<div class="sm_border"></div>
-					</div>
+			<div class="edu-layout">
+				<div class="edu-list">
+					<article class="edu reveal">
+						<p class="edu-years">2017 — 2020</p>
+						<h3>Master of Computer Applications</h3>
+						<p class="muted">Coimbatore Institute of Technology · CGPA 7.16</p>
+					</article>
+					<article class="edu reveal">
+						<p class="edu-years">2014 — 2017</p>
+						<h3>B.Sc. Information Systems</h3>
+						<p class="muted">Coimbatore Institute of Technology · CGPA 6.45</p>
+					</article>
 				</div>
-
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<div class="education-container wow fadeInUp">
-						<h5 style="margin-bottom: 20px; font-weight: 600;">Education</h5>
-						<ul class="edu-list">
-							<li>
-								<strong>Aug 2017 - Apr 2020</strong>
-								<h5>Master of Computer Applications</h5>
-								<p>Coimbatore Institute of Technology | CGPA: 7.16</p>
-							</li>
-							<li>
-								<strong>Jun 2014 - Apr 2017</strong>
-								<h5>Bachelor of Science in Information System</h5>
-								<p>Coimbatore Institute of Technology | CGPA: 6.45</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<div class="education-container wow fadeInUp">
-						<h5 style="margin-bottom: 20px; font-weight: 600;">Certifications</h5>
-						<ul class="edu-list" style="list-style: none; padding: 0;">
-							<li style="padding: 8px 0;"><i class="fa fa-certificate" style="color: #ff6b6b; margin-right: 10px;"></i>Modern JavaScript for React JS</li>
-							<li style="padding: 8px 0;"><i class="fa fa-certificate" style="color: #ff6b6b; margin-right: 10px;"></i>The Ultimate Sass & Less Course</li>
-							<li style="padding: 8px 0;"><i class="fa fa-certificate" style="color: #ff6b6b; margin-right: 10px;"></i>React JS - Complete Guide for Frontend Web Development</li>
-							<li style="padding: 8px 0;"><i class="fa fa-certificate" style="color: #ff6b6b; margin-right: 10px;"></i>React Native - The Practical Guide</li>
-							<li style="padding: 8px 0;"><i class="fa fa-certificate" style="color: #ff6b6b; margin-right: 10px;"></i>Understanding TypeScript</li>
-							<li style="padding: 8px 0;"><i class="fa fa-certificate" style="color: #ff6b6b; margin-right: 10px;"></i>React Testing Library & Jest: The Complete Guide</li>
-						</ul>
-					</div>
-				</div>
+				<ol class="cert-list reveal">
+					<li>Modern JavaScript for React JS</li>
+					<li>React JS — Complete Guide for Frontend Web Development</li>
+					<li>React Native — The Practical Guide</li>
+					<li>Understanding TypeScript</li>
+					<li>React Testing Library &amp; Jest: The Complete Guide</li>
+					<li>The Ultimate Sass &amp; Less Course</li>
+				</ol>
 			</div>
+		</section>
+
+		<!-- CONTACT -->
+		<section class="section" id="contact">
+			<div class="contact-card reveal">
+				<div class="contact-left">
+					<p class="kicker">06 — Contact</p>
+					<h2 class="contact-title">Have an idea?<br><em>Let's build it.</em></h2>
+					<p class="contact-lead">Open to full-time roles, freelance projects and collaborations. I usually reply within a day.</p>
+					<div class="email-row">
+						<a class="big-email" href="mailto:chandrasekar1996@gmail.com">chandrasekar1996@gmail.com</a>
+						<button class="copy-btn" type="button" id="copy-email" data-email="chandrasekar1996@gmail.com">Copy</button>
+					</div>
+					<dl class="contact-meta">
+						<div><dt>Phone</dt><dd><a href="tel:+919976956624">+91 99769 56624</a></dd></div>
+						<div><dt>Based in</dt><dd>Namakkal, Tamil Nadu</dd></div>
+						<div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/chandrasekar-p-6a3136a1/" target="_blank" rel="noopener">chandrasekar-p</a></dd></div>
+						<div><dt>Instagram</dt><dd><a href="https://www.instagram.com/c_ha_n_dr_u_92_43/" target="_blank" rel="noopener">@c_ha_n_dr_u_92_43</a></dd></div>
+					</dl>
+				</div>
+
+				<form class="contact-form" id="contact-form" novalidate>
+					<div class="field">
+						<input type="text" id="f-name" name="name" placeholder=" " required autocomplete="name">
+						<label for="f-name">Your name</label>
+					</div>
+					<div class="field">
+						<input type="email" id="f-email" name="email" placeholder=" " required autocomplete="email">
+						<label for="f-email">Your email</label>
+					</div>
+					<fieldset class="topics">
+						<legend>I'm interested in</legend>
+						<label><input type="radio" name="topic" value="Full-time role" checked><span>Full-time role</span></label>
+						<label><input type="radio" name="topic" value="Freelance project"><span>Freelance</span></label>
+						<label><input type="radio" name="topic" value="Collaboration"><span>Collaboration</span></label>
+						<label><input type="radio" name="topic" value="Just saying hi"><span>Just hi</span></label>
+					</fieldset>
+					<div class="field">
+						<textarea id="f-message" name="message" rows="4" placeholder=" " required></textarea>
+						<label for="f-message">Tell me about it</label>
+					</div>
+					<button class="btn btn-solid btn-block" type="submit">Send message <span aria-hidden="true">→</span></button>
+					<p class="form-status" id="form-status" role="status"></p>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p class="wordmark" aria-hidden="true">Chandrasekar</p>
+		<div class="footer-row">
+			<p>© <span id="year"></span> Chandrasekar P. Built by hand with HTML, CSS &amp; JS.</p>
+			<a href="#top" class="to-top">Back to top ↑</a>
 		</div>
-	</section>
-	<!-- END RESUME -->
+	</footer>
 
-	<!-- START CONTACT -->
-	<section id="contact" class="gray_bg section_padding">
-		<div class="container">
-			<div class="col-md-12 col-sm-12 col-xs-12">
-				<div class="section_heading text-center">
-					<h2>Contact <span>Me</span></h2>
-					<p>Feel free to reach out — whether it's for opportunities, collaborations, or general inquiries.</p>
-					<div class="sm_border"></div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<form id="contact-form" class="form" name="enq">
-<div class="row">
-							<div class="form-group col-md-4">
-								<input type="text" name="name" class="form-control" placeholder="Name"
-									required="required">
-							</div>
-							<div class="form-group col-md-4">
-								<input type="email" name="email" class="form-control" placeholder="Email"
-									required="required">
-							</div>
-							<div class="form-group col-md-4">
-								<input type="text" name="subject" class="form-control" placeholder="Subject"
-									required="required">
-							</div>
-							<div class="form-group col-md-12">
-								<textarea rows="6" name="message" class="form-control" placeholder="Your Message"
-									required="required"></textarea>
-							</div>
-							<div class="col-md-12 text-center">
-								<button type="submit" value="Send message" name="submit" id="submitButton"
-									class="btn btn-default main_btn" title="Submit Your Message!">Send Message</button>
-								<div id="form-message" class="form-message" style="display:none;"></div>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END CONTACT -->
-
-	<!-- START FOOTER -->
-	<div class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="copy-text">
-						<p>Copyright &copy; <span id="copyright-year"></span> Chandrasekar. All Rights Reserved.</p>
-					</div>
-				</div>
-				<!-- End Col -->
-			</div>
-		</div>
-	</div>
-	<!-- END FOOTER -->
-	<!-- Scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/modernizr-2.8.3.min.js"></script>
-	<script src="js/jquery.nav.js"></script>
-	<script src="js/jquery.inview.min.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/animated-headline.js"></script>
-	<script src="js/jquery.ripples-min.js"></script>
-	<script src="js/lightbox.min.js"></script>
-	<script src="js/slick-nav.js"></script>
-	<script src="js/scrolltopcontrol.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/main.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-	<script type="text/javascript">
-		document.getElementById('copyright-year').textContent = new Date().getFullYear();
-
-		(function () {
-			emailjs.init({ publicKey: "YOUR_PUBLIC_KEY" }); // Replace with your EmailJS Public Key
-		})();
-
-		document.getElementById('contact-form').addEventListener('submit', function (event) {
-			event.preventDefault();
-
-			var btn = document.getElementById('submitButton');
-			var msgDiv = document.getElementById('form-message');
-
-			btn.disabled = true;
-			btn.textContent = 'Sending...';
-			msgDiv.style.display = 'none';
-			msgDiv.className = 'form-message';
-
-			var templateParams = {
-				name: document.querySelector('input[name="name"]').value,
-				email: document.querySelector('input[name="email"]').value,
-				subject: document.querySelector('input[name="subject"]').value,
-				message: document.querySelector('textarea[name="message"]').value
-			};
-
-			emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams) // Replace Service ID and Template ID
-				.then(function () {
-					msgDiv.className = 'form-message success';
-					msgDiv.textContent = 'Your message has been sent! I will get back to you soon.';
-					msgDiv.style.display = 'block';
-					event.target.reset();
-					btn.disabled = false;
-					btn.textContent = 'Send Message';
-				}, function () {
-					msgDiv.className = 'form-message error';
-					msgDiv.textContent = 'Failed to send your message. Please try again later.';
-					msgDiv.style.display = 'block';
-					btn.disabled = false;
-					btn.textContent = 'Send Message';
-				});
-		});
-	</script>
+	<script src="js/site.js"></script>
 </body>
 
 </html>
