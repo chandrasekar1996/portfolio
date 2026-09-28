@@ -1264,20 +1264,43 @@ button {
   }
 }
 
-.job-body > ul:first-child {
+.job-body > ul:not(.tags) {
   display: grid;
   gap: 10px;
   margin-bottom: 18px;
 }
 
-.job-body > ul:first-child li {
+.job-stint {
+  margin-bottom: 12px;
+  font-family: var(--f-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.job-stint ~ .job-stint {
+  margin-top: 6px;
+}
+
+.job-desc {
+  margin: -4px 0 16px;
+  color: var(--ink-2);
+  max-width: 72ch;
+}
+
+.job-desc + .job-stint {
+  margin-top: 16px;
+}
+
+.job-body > ul:not(.tags) li {
   position: relative;
   padding-left: 22px;
   color: var(--ink-2);
   max-width: 72ch;
 }
 
-.job-body > ul:first-child li::before {
+.job-body > ul:not(.tags) li::before {
   content: '';
   position: absolute;
   left: 0;
@@ -1302,9 +1325,14 @@ button {
   border-radius: var(--radius);
 }
 
+/* 3 + 2 + 1 rows: the last group (tools & practices) is the longest */
 .skill-group:nth-child(4),
 .skill-group:nth-child(5) {
   grid-column: span 3;
+}
+
+.skill-group:nth-child(6) {
+  grid-column: 1 / -1;
 }
 
 .skill-group h3 {
@@ -1489,6 +1517,55 @@ button {
   color: var(--accent-ink);
 }
 
+.cv-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 16px 16px 20px;
+  border: 1px solid var(--invert-line);
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--invert-ink) 5%, transparent);
+}
+
+.cv-title {
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+.cv-sub {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  color: var(--invert-muted);
+}
+
+.cv-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn-sm {
+  padding: 11px 18px;
+  font-size: 0.88rem;
+}
+
+.contact-card .btn-sm:hover {
+  background: var(--invert-ink);
+  color: var(--invert-bg);
+}
+
+.cv-link {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.cv-link:hover {
+  color: var(--accent);
+}
+
 .contact-meta {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1669,6 +1746,12 @@ button {
   color: var(--muted);
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .to-top {
   font-weight: 600;
   color: var(--ink);
@@ -1735,10 +1818,6 @@ button {
   .skill-group:nth-child(4),
   .skill-group:nth-child(5) {
     grid-column: auto;
-  }
-
-  .skill-group:nth-child(5) {
-    grid-column: 1 / -1;
   }
 }
 
@@ -1851,8 +1930,13 @@ button {
     grid-template-columns: 1fr;
   }
 
-  .skill-group:nth-child(5) {
+  .skill-group:nth-child(6) {
     grid-column: auto;
+  }
+
+  .cv-box {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .service {

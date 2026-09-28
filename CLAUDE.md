@@ -14,7 +14,9 @@ Open `index.html` directly in a browser, or serve the folder:
 python -m http.server 8000
 ```
 
-The site has historically been hosted on GitHub Pages (git history shows a `CNAME` file for a custom domain being added and then deleted).
+Deployed on GitHub Pages at https://chandrasekar1996.github.io/portfolio/ (no custom domain — a `CNAME` was added and later deleted).
+
+`README.md` repeats the section list, feature highlights and project structure, and shows light/dark screenshots from `images/readme/`. Update it when those change.
 
 ## Architecture
 
@@ -31,10 +33,14 @@ Conventions that span files:
 - Project visuals in `#work` are CSS/inline-SVG mockups (no images).
 - Experience entries are native `<details>` elements.
 
+## Resume
+
+`resume/Chandrasekar P.pdf` is the owner's own resume (supplied by them, not generated here). It is linked with the `download` attribute from the nav, hero, contact card and footer, and the contact card also has a "View" link. To update it, replace the file and keep the same name. Don't generate or rewrite the resume. Keep the experience, skills and certifications in `index.html` in sync with it, and update the "Updated <month>" text in `.cv-sub`.
+
 ## Contact
 
 No backend. The form in `#contact` validates name/email/message, then builds a `mailto:chandrasekar1996@gmail.com` URL with the chosen topic in the subject and opens the visitor's email app. Change the recipient in `site.js` (`TO`) and in the `mailto:` links in `index.html`.
 
 ## Legacy files
 
-Nothing from the original jQuery/Bootstrap template is referenced by `index.html` any more: `css/style.css`, `css/responsive.css`, `css/plugins*`, `css/lightbox.min.css`, `js/main.js`, `js/form-contact.js`, the other vendor JS in `js/`, `fonts/`, the stock images in `images/` (only `favicon.svg`, `favicon.png` and `apple-touch-icon.png` are used; the PNGs are exported from `favicon.svg`), `contact.php`, and `thank-you.html`.
+Nothing from the original jQuery/Bootstrap template is referenced by `index.html` any more: `css/style.css`, `css/responsive.css`, `css/plugins*`, `css/lightbox.min.css`, `js/main.js`, `js/form-contact.js`, the other vendor JS in `js/`, `fonts/`, the stock images in `images/` (the page uses only `favicon.svg`, `favicon.png` and `apple-touch-icon.png`, and the PNGs are exported from `favicon.svg`; `images/readme/` holds the README screenshots), `contact.php`, and `thank-you.html`.
