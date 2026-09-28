@@ -14,7 +14,7 @@ Personal portfolio of **Chandrasekar P**, a Front-End Developer with 5+ years of
 - **Bento-grid hero**: intro, a rotating badge, a live Namakkal clock (IST), stats, and a scrolling "daily stack" of chips
 - **Light and dark themes**: follows the system setting by default, with a toggle that remembers the visitor's choice
 - **Illustrated project cards**: the mockups are drawn with CSS and inline SVG, with no image files
-- **Accordion experience timeline** built on native `<details>` elements
+- **Accordion experience timeline** built on native `<details>` elements, grouping each company's role progression into a single entry
 - **Contact form without a backend**: it opens the visitor's email app with the message already filled in, so it works on static hosting
 - **Responsive and accessible**: mobile menu, keyboard focus styles, a skip link, and `prefers-reduced-motion` support
 - **Downloadable CV**: a one-page PDF linked from the nav, hero, contact card and footer
@@ -59,3 +59,4 @@ images/           Favicons and README screenshots
 
 - Email: [chandrasekar1996@gmail.com](mailto:chandrasekar1996@gmail.com)
 - LinkedIn: [chandrasekar-p](https://www.linkedin.com/in/chandrasekar-p-6a3136a1/)
+- GitHub: [chandrasekar1996](https://github.com/chandrasekar1996)
