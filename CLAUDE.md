@@ -41,6 +41,6 @@ Conventions that span files:
 
 No backend. The form in `#contact` validates name/email/message, then builds a `mailto:chandrasekar1996@gmail.com` URL with the chosen topic in the subject and opens the visitor's email app. Change the recipient in `site.js` (`TO`) and in the `mailto:` links in `index.html`.
 
-## Legacy files
+## Files
 
-Nothing from the original jQuery/Bootstrap template is referenced by `index.html` any more: `css/style.css`, `css/responsive.css`, `css/plugins*`, `css/lightbox.min.css`, `js/main.js`, `js/form-contact.js`, the other vendor JS in `js/`, `fonts/`, the stock images in `images/` (the page uses only `favicon.svg`, `favicon.png` and `apple-touch-icon.png`, and the PNGs are exported from `favicon.svg`; `images/readme/` holds the README screenshots), `contact.php`, and `thank-you.html`.
+The repo is trimmed to only what the site uses — the original jQuery/Bootstrap template (its vendor `js/`, `css/`, `fonts/`, stock `images/`, `contact.php` and `thank-you.html`) has been removed. What remains: `index.html`, `css/site.css`, `js/site.js`, `resume/Chandrasekar P.pdf`, the three favicons in `images/` (`favicon.svg`, `favicon.png`, `apple-touch-icon.png`; the PNGs are exported from the SVG), `images/readme/` (README screenshots), and the two docs. Don't reintroduce vendor libraries — the site is dependency-free by design.
