@@ -31,10 +31,6 @@ Conventions that span files:
 - Project visuals in `#work` are CSS/inline-SVG mockups (no images).
 - Experience entries are native `<details>` elements.
 
-## Resume
-
-`resume/Chandrasekar-P-Resume.pdf` is the owner's own resume (supplied by them, not generated here) and is linked from the nav, hero, contact card and footer. To update it, replace the file with the new PDF under the same name. Don't generate or rewrite the resume. Keep the experience, skills and certifications in `index.html` in sync with it.
-
 ## Contact
 
 No backend. The form in `#contact` validates name/email/message, then builds a `mailto:chandrasekar1996@gmail.com` URL with the chosen topic in the subject and opens the visitor's email app. Change the recipient in `site.js` (`TO`) and in the `mailto:` links in `index.html`.

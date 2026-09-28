@@ -2,7 +2,7 @@
 
 Personal portfolio of **Chandrasekar P**, a Front-End Developer with 5+ years of experience building responsive, scalable web and mobile applications with React.js, React Native and TypeScript.
 
-**Live site → [chandrasekar1996.github.io/portfolio](https://chandrasekar1996.github.io/portfolio/)** · **Résumé → [PDF](resume/Chandrasekar-P-Resume.pdf)**
+**Live site → [chandrasekar1996.github.io/portfolio](https://chandrasekar1996.github.io/portfolio/)**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/readme/preview-dark.png">
@@ -17,7 +17,6 @@ Personal portfolio of **Chandrasekar P**, a Front-End Developer with 5+ years of
 - **Accordion experience timeline** built on native `<details>` elements
 - **Contact form without a backend**: it opens the visitor's email app with the message already filled in, so it works on static hosting
 - **Responsive and accessible**: mobile menu, keyboard focus styles, a skip link, and `prefers-reduced-motion` support
-- **Downloadable CV**: a one-page PDF linked from the nav, hero, contact card and footer
 - **No build step**: plain HTML, CSS and vanilla JavaScript, with no frameworks or dependencies
 
 ## Sections
@@ -51,7 +50,6 @@ python -m http.server 8000
 index.html        All page content
 css/site.css      Styles and light/dark theme tokens
 js/site.js        Theme toggle, menu, clock, scroll reveal, contact form
-resume/           Chandrasekar-P-Resume.pdf (downloadable CV)
 images/           Favicons and README screenshots
 ```
 
